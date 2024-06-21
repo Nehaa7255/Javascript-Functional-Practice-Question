@@ -169,7 +169,7 @@ const filterByScore = (studentss) => {
     { name: 'Bob', score: 75 },
     { name: 'Charlie', score: 90 },
   ];
-   // console.log(filterByScore(studentss));
+    console.log(filterByScore(studentss));
 
 /*
 10. Write an ES6 function that takes an array of objects with the properties name, age and city, and
