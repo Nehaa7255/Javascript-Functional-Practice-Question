@@ -184,7 +184,7 @@ const people = [
 const filteredPeople = filterByCityAndAge(people)
 console.log(filteredPeople)
 / Output: [{ name: 'Ridhima', age: 75, city: 'Indore' }, { name: 'Udit', age: 80, city:
-
+*/
 const filterByCityAndAge=(peopless)=>{
     return peopless.filter(data=>data.city=="Indore" && data.age>70)
 }
