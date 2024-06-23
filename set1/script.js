@@ -28,9 +28,7 @@ const capitalizeArray=(myArray)=>{
     return myArray.map(String=>String.toUpperCase());
 };
 const myArray = ['apple', 'banana', 'cherry']
-console.log(capitalizeArray(myArray));
-
-
+//console.log(capitalizeArray(myArray));
 
 /*
 3. Write an ES6 function that takes an array of objects representing 
@@ -44,6 +42,16 @@ const people = [
 const ages = getAges(people)
 console.log(ages) // Output: [25, 24, 29]
 */
+const getAges=(people)=>{
+    return people.map(person=>person.age)
+}
+const people = [
+    { name: 'Ankit', age: 25 },
+    { name: 'Vinit', age: 24 },
+    { name: 'Shashi', age: 29 },
+   ];
+   const ages = getAges(people);
+   console.log(ages) // Output: [25, 24, 29]
 
 /*
 4. Write an ES6 function that takes an array of objects representing 
@@ -58,7 +66,16 @@ const products = [
 console.log(getProductNamesInLowerCase(products))
 / Output: ["lip balm", "perfume", "socks"]
 */
-
+/*
+const getProductNamesInLowerCase=(products)=>{
+return products.map(products=>products.name.toLowerCase())
+};
+const products = [
+    { name: 'Lip Balm', stock: 100 },
+    { name: 'PERFUME', stock: 400 },
+    { name: 'Socks', stock: 200 },
+   ]
+   console.log(getProductNamesInLowerCase(products));
 
 /*
 5. Write an ES6 function that takes an array of objects representing cities and returns an array of
