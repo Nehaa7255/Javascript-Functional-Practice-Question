@@ -195,8 +195,7 @@ const peopless = [
     { name: 'Venki', age: 80, city: 'Bangalore' },
    ]
    const filteredPeople = filterByCityAndAge(peopless)
-  // console.log(filteredPeople)
-
+  // console.log(filteredPeople);
 
 /*
 11. Write an ES6 function that takes an array of objects containing book information (title, author,
@@ -220,11 +219,10 @@ const filteredBooks = filterByGenre(books, 'Science Fiction')
 console.log(filteredBooks)
 / Output: [{title: "The Hitchhiker's Guide to the Galaxy", author: "Douglas Adams", genr
 */
-/*
+
 const filterByGenre=(books,genre)=>{
     return books.filter(book=>book.genre=='Science Fiction')
 }
-
 const books = [
     {
     title: "The Hitchhiker's Guide to the Galaxy",
@@ -241,7 +239,7 @@ const books = [
    ]
    const filteredBooks = filterByGenre(books, 'Science Fiction')
    console.log(filteredBooks)
-*/
+
 /*
 12. Write an ES6 function that takes an array of objects containing 
 employee information (name,age, salary) and returns an array with only 
