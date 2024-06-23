@@ -259,7 +259,6 @@ age: 40, salary: 500
 const filterBySalary=(employees)=>{
     return employees.filter(data=>data.salary>22000 && data.age>25)
 }
-
 const employees = [
  { name: 'Abhay', age: 25, salary: 20000 },
  { name: 'Joice', age: 30, salary: 35000 },
