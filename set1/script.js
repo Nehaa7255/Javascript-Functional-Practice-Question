@@ -97,7 +97,7 @@ const cities = [
     { name: 'Los Angeles', population: 3976000 },
     { name: 'Bangalore', population: 13608000 },
    ]
-   console.log(getCityNames(cities))
+   //console.log(getCityNames(cities))
 
 /*
 6. Write an ES6 function that takes an array of strings and returns an array with only the strings
@@ -107,6 +107,11 @@ const fruits = ['apple', 'banana', 'cherry', 'watermelon', 'pineapple']
 console.log(filterLongStrings(fruits))
 / Output: ["banana", "cherry", "watermelon", "pineapple"]
 */
+const filterLongStrings=(fruits)=>{
+return fruits.filter(fruits=>fruits.length>5)
+}
+const fruits = ['apple', 'banana', 'cherry', 'watermelon', 'pineapple']
+//console.log(filterLongStrings(fruits))
 
 /*
 7. Write an ES6 function that takes an array of numbers and returns an array with only the
@@ -116,8 +121,13 @@ const numbers = [1, 2, 30, 4, 15]
 console.log(isDivisibleBy3and5(numbers))
 / Output: [30, 15]
 */
+const isDivisibleBy3and5=(numberss)=>{
+return numberss.filter(num=>num%3==0 && num % 5==0)
+}
+const numberss = [1, 2, 30, 4, 15]
+//console.log(isDivisibleBy3and5(numberss));
 
-
+/*
 /*
 8. Write an ES6 function that takes an array of objects with the properties name and age, and
 returns an array with only the objects that have an age greater than 30.
@@ -129,8 +139,15 @@ const people = [
 ]
 console.log(filterByAge(people))
 / Output: [{ name: 'Raj', age: 35 }, { name: 'Vijay', age: 45 }]
-*/
 
+const filterByAge=(peoples)=> peoples.filter((person)=>person.age>30);
+
+const peoples = [
+    { name: 'Rahul', age: 25 },
+    { name: 'Raj', age: 35 },
+    { name: 'Vijay', age: 45 },
+   ]
+  //console.log(filterByAge(peoples));
 
 /*
 9. Write an ES6 function that takes an array of objects with the properties name and score, and
@@ -143,12 +160,22 @@ const students = [
 ]
 console.log(filterByScore(students))
 / Output: [{ name: 'Aditya', score: 85 }, { name: 'Charlie', score: 90 }]
-*/
+
+
+const filterByScore = (studentss) => {
+    return studentss.filter(student => student.score > 80);
+  };
+  
+  const studentss = [
+    { name: 'Aditya', score: 85 },
+    { name: 'Bob', score: 75 },
+    { name: 'Charlie', score: 90 },
+  ];
+   // console.log(filterByScore(studentss));
 
 /*
 10. Write an ES6 function that takes an array of objects with the properties name, age and city, and
-returns an array with only the objects that have a city property of "Indore" and age greater than
-70.
+returns an array with only the objects that have a city property of "Indore" and age greater than 70.
 / Your ES6 code here
 const people = [
  { name: 'Ridhima', age: 75, city: 'Indore' },
@@ -159,9 +186,18 @@ const people = [
 const filteredPeople = filterByCityAndAge(people)
 console.log(filteredPeople)
 / Output: [{ name: 'Ridhima', age: 75, city: 'Indore' }, { name: 'Udit', age: 80, city:
-*/
 
-
+const filterByCityAndAge=(peopless)=>{
+    return peopless.filter(data=>data.city=="Indore" && data.age>70)
+}
+const peopless = [
+    { name: 'Ridhima', age: 75, city: 'Indore' },
+    { name: 'Akshay', age: 60, city: 'Delhi' },
+    { name: 'Udit', age: 80, city: 'Indore' },
+    { name: 'Venki', age: 80, city: 'Bangalore' },
+   ]
+   const filteredPeople = filterByCityAndAge(peopless)
+  // console.log(filteredPeople)
 
 
 /*
@@ -186,10 +222,28 @@ const filteredBooks = filterByGenre(books, 'Science Fiction')
 console.log(filteredBooks)
 / Output: [{title: "The Hitchhiker's Guide to the Galaxy", author: "Douglas Adams", genr
 */
+/*
+const filterByGenre=(books,genre)=>{
+    return books.filter(book=>book.genre=='Science Fiction')
+}
 
-
-
-
+const books = [
+    {
+    title: "The Hitchhiker's Guide to the Galaxy",
+    author: 'Douglas Adams',
+    genre: 'Science Fiction',
+    },
+    {
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    genre: 'Fiction',
+    },
+    { title: '1984', author: 'George Orwell', genre: 'Science Fiction' },
+    { title: 'Pride and Prejudice', author: 'Jane Austen', genre: 'Romance' },
+   ]
+   const filteredBooks = filterByGenre(books, 'Science Fiction')
+   console.log(filteredBooks)
+*/
 /*
 12. Write an ES6 function that takes an array of objects containing 
 employee information (name,age, salary) and returns an array with only 
@@ -205,4 +259,18 @@ const filteredEmployees = filterBySalary(employees, 22000, 25)
 console.log(filteredEmployees)
 / Output: [{name: "Joice", age: 30, salary: 35000}, {name: "Jeena", 
 age: 40, salary: 500
+*/
+/*
+const filterBySalary=(employees)=>{
+    return employees.filter(data=>data.salary>22000 && data.age>25)
+}
+
+const employees = [
+ { name: 'Abhay', age: 25, salary: 20000 },
+ { name: 'Joice', age: 30, salary: 35000 },
+ { name: 'Reena', age: 35, salary: 15000 },
+ { name: 'Jeena', age: 40, salary: 50000 },
+]
+const filteredEmployees = filterBySalary(employees, 22000, 25)
+console.log(filteredEmployees)
 */
