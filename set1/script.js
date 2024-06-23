@@ -128,7 +128,6 @@ const numberss = [1, 2, 30, 4, 15]
 //console.log(isDivisibleBy3and5(numberss));
 
 /*
-/*
 8. Write an ES6 function that takes an array of objects with the properties name and age, and
 returns an array with only the objects that have an age greater than 30.
 / Your ES6 code here
@@ -139,7 +138,7 @@ const people = [
 ]
 console.log(filterByAge(people))
 / Output: [{ name: 'Raj', age: 35 }, { name: 'Vijay', age: 45 }]
-
+*/
 const filterByAge=(peoples)=> peoples.filter((person)=>person.age>30);
 
 const peoples = [
@@ -160,8 +159,7 @@ const students = [
 ]
 console.log(filterByScore(students))
 / Output: [{ name: 'Aditya', score: 85 }, { name: 'Charlie', score: 90 }]
-
-
+*/
 const filterByScore = (studentss) => {
     return studentss.filter(student => student.score > 80);
   };
