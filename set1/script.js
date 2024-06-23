@@ -75,11 +75,11 @@ const products = [
     { name: 'PERFUME', stock: 400 },
     { name: 'Socks', stock: 200 },
    ]
-   console.log(getProductNamesInLowerCase(products));
+   //console.log(getProductNamesInLowerCase(products));
 
 /*
-5. Write an ES6 function that takes an array of objects representing cities and returns an array of
-their names using the map method.
+5. Write an ES6 function that takes an array of objects representing cities and
+ returns an array of their names using the map method.
 / Your ES6 function here
 const cities = [
  { name: 'New York', population: 8538000 },
@@ -89,7 +89,15 @@ const cities = [
 console.log(getCityNames(cities))
 / Output: ["New York", "Los Angeles", "Bangalore"]
 */
-
+const getCityNames=(cities)=>{
+    return cities.map(cities=>cities.name)
+}
+const cities = [
+    { name: 'New York', population: 8538000 },
+    { name: 'Los Angeles', population: 3976000 },
+    { name: 'Bangalore', population: 13608000 },
+   ]
+   console.log(getCityNames(cities))
 
 /*
 6. Write an ES6 function that takes an array of strings and returns an array with only the strings
