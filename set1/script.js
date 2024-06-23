@@ -51,7 +51,7 @@ const people = [
     { name: 'Shashi', age: 29 },
    ];
    const ages = getAges(people);
-   console.log(ages) // Output: [25, 24, 29]
+   //console.log(ages) // Output: [25, 24, 29]
 
 /*
 4. Write an ES6 function that takes an array of objects representing 
@@ -66,7 +66,7 @@ const products = [
 console.log(getProductNamesInLowerCase(products))
 / Output: ["lip balm", "perfume", "socks"]
 */
-/*
+
 const getProductNamesInLowerCase=(products)=>{
 return products.map(products=>products.name.toLowerCase())
 };
