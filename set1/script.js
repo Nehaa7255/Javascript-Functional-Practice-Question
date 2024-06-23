@@ -238,7 +238,7 @@ const books = [
     { title: 'Pride and Prejudice', author: 'Jane Austen', genre: 'Romance' },
    ]
    const filteredBooks = filterByGenre(books, 'Science Fiction')
-   console.log(filteredBooks)
+   console.log(filteredBooks);
 
 /*
 12. Write an ES6 function that takes an array of objects containing 
@@ -256,7 +256,6 @@ console.log(filteredEmployees)
 / Output: [{name: "Joice", age: 30, salary: 35000}, {name: "Jeena", 
 age: 40, salary: 500
 */
-/*
 const filterBySalary=(employees)=>{
     return employees.filter(data=>data.salary>22000 && data.age>25)
 }
@@ -268,5 +267,4 @@ const employees = [
  { name: 'Jeena', age: 40, salary: 50000 },
 ]
 const filteredEmployees = filterBySalary(employees, 22000, 25)
-console.log(filteredEmployees)
-*/
+console.log(filteredEmployees);
