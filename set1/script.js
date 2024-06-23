@@ -14,7 +14,7 @@ const incrementNumbers=(numbers)=>{
 return numbers.map(val=>val+3)
 }
 const numbers = [1, 2, 3, 4, 5]
-console.log(incrementNumbers(numbers));
+//console.log(incrementNumbers(numbers));
 
 /*
 2. Write an ES6 function that takes an array of strings and returns an 
@@ -24,6 +24,12 @@ const myArray = ['apple', 'banana', 'cherry']
 console.log(capitalizeArray(myArray))
 / Output: ["APPLE", "BANANA", "CHERRY"]
 */
+const capitalizeArray=(myArray)=>{
+    return myArray.map(String=>String.toUpperCase());
+};
+const myArray = ['apple', 'banana', 'cherry']
+console.log(capitalizeArray(myArray));
+
 
 
 /*
