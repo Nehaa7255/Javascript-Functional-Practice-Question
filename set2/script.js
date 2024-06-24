@@ -84,4 +84,40 @@ const getBookTitles=(book)=>{
     const titles = getBookTitles(books);
     //console.log(titles);
     
+    /*
+    5. Write an ES6 function which takes out the names of the students whose first letter starts with ‘A’.
+    const studentName = ["Ram", "Anjali", "Arpit", "Bhanu Kumar", "Jaya", "Ankit", "shayam"]
+    / Your code here
+    console.log(studentNames);
+    / Output: ["Anjali", "Arpit", "Ankit"]
+    */
+    const studentName = ["Ram", "Anjali", "Arpit", "Bhanu Kumar", "Jaya", "Ankit", "shayam"];
+    const nameStartWithA = (names) => {
+      return names.filter(name => name.startsWith('A'));
+    };
+    //console.log(nameStartWithA(studentName));
+    
+    /*
+    6. Write an ES6 function which filters out the products which have a price greater than 40.
+    const productData = [
+    {prodName: "Dairy Milk", price: 10},
+    {prodName: "Dairy Milk Silk", price: 70},
+    {prodName: "Five Star", price: 20},
+    {prodName: "Mars", price: 50}
+    ]
+    / Your code here
+    console.log(getProducts(productData, 40))
+    / Output: [{prodName: 'Dairy Milk Silk', price: 70}, {prodName: 'Mars', price: 50}]
+    */
+    const getProducts=(product)=>{
+        return product.filter(Data=>Data.price>40)
+    }
+    const productData = [
+        {prodName: "Dairy Milk", price: 10},
+        {prodName: "Dairy Milk Silk", price: 70},
+        {prodName: "Five Star", price: 20},
+        {prodName: "Mars", price: 50}
+        ]
+       // console.log(getProducts(productData, 40))
+    
     
