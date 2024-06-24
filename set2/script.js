@@ -120,4 +120,55 @@ const getBookTitles=(book)=>{
         ]
        // console.log(getProducts(productData, 40))
     
+    /*
+    7. Write an ES6 function that takes an array of numbers and returns the first number that is divisible by 7.
+    const numbers = [1, 2, 3, 21, 14, 7];
+    / Your code here
+    console.log(isDivisibleBy7)
+    / Output: 21
+    */
+    const isDivisibleBy7=(nums)=>{
+        return nums.find(num=>num%7==0)
+    }
+    const numberss = [1, 2, 3, 21, 14, 7];
+    console.log(isDivisibleBy7(numberss))
+    
+    /*
+    8. Write an ES6 function that takes an array of strings and returns the first string that is longer than 8 characters.
+    const names = ["Mohan", "Anjali", "Geetanjali", "Ankit", "Bhanu Kumar", "Ramakrishnan", 
+    / Your code here
+    console.log(isNamesGreaterThan8(names));
+    / Output: "Geetanjali"
+    */
+    const isNamesGreaterThan8=(nam)=>{
+        return nam.find(string=>string.length>8)
+    }
+    const names1 = ["Mohan", "Anjali", "Geetanjali", "Ankit", "Bhanu Kumar", "Ramakrishnan", 
+    ]
+        console.log(isNamesGreaterThan8(names1));
+    
+    /*
+    9. Write an ES6 function that takes an array of objects representing students with properties name and grade. Return the first student object that has a grade of "A".
+    const students = [
+     { name: "John", grade: "B" },
+     { name: "Mary", grade: "A" },
+     { name: "Sam", grade: "C" },
+     { name: "Sarah", grade: "A" },
+    ];
+    / Your code here
+    const studentWithGradeA = findStudentWithGradeA(students);
+    console.log(studentWithGradeA);
+    / Output: { name: "Mary", grade: "A" }
+    */
+    const findStudentWithGradeA=(student)=>{
+        return student.find(stud=>stud.grade=="A")
+    }
+    const students = [
+        { name: "John", grade: "B" },
+        { name: "Mary", grade: "A" },
+        { name: "Sam", grade: "C" },
+        { name: "Sarah", grade: "A" },
+       ];
+       const studentWithGradeA = findStudentWithGradeA(students);
+      // console.log(studentWithGradeA);
     
