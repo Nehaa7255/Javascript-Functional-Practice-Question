@@ -172,3 +172,55 @@ const getBookTitles=(book)=>{
        const studentWithGradeA = findStudentWithGradeA(students);
       // console.log(studentWithGradeA);
     
+      
+    /*
+    10. Write an ES6 function that takes an array of objects representing students with properties name, grade and scholarship. Return the first student object that has a grade of "B" or they are a scholarship student.
+    const students = [
+     { name: "John", grade: "B", scholarship: false },
+     { name: "Mary", grade: "B", scholarship: true },
+     { name: "Sam", grade: "A", scholarship: false },
+     { name: "Sarah", grade: "A", scholarship: true },
+    ];
+    / Your code here
+    const student = findStudent(students);
+    console.log(student);
+    / Output: { name: "Mary", grade: "B", scholarship: true }
+    */
+    const findStudent=(Data)=>{
+        return Data.find(datas=>datas.grade=="B" && datas.scholarship==true)
+    }
+    const students2 = [
+        { name: "John", grade: "B", scholarship: false },
+        { name: "Mary", grade: "B", scholarship: true },
+        { name: "Sam", grade: "A", scholarship: false },
+        { name: "Sarah", grade: "A", scholarship: true },
+       ];
+       const student = findStudent(students2);
+       //console.log(student);
+    
+    /*
+    11. Write an ES6 function that takes an array of objects representing students with properties name
+    and grade. Return the first student object that has a grade of "B" and they are also a scholarship student.
+    const students = [
+     { name: "John", grade: "B", scholarship: false },
+     { name: "Mary", grade: "A", scholarship: true },
+     { name: "Sam", grade: "A", scholarship: false },
+     { name: "Sarah", grade: "B", scholarship: true },
+    ];
+    / Your code here
+    const student = findStudent(students);
+    console.log(student);
+    / Output: { name: "Sarah", grade: "B", scholarship: true }
+    */
+    const findStudents=(details)=>{
+       return  details.find(detail=>detail.grade=="B" && detail.scholarship==true)
+    }
+    const students3 = [
+     { name: "John", grade: "B", scholarship: false },
+     { name: "Mary", grade: "A", scholarship: true },
+     { name: "Sam", grade: "A", scholarship: false },
+     { name: "Sarah", grade: "B", scholarship: true },
+    ];
+    const student1 = findStudents(students3);
+    console.log(student1);
+    
