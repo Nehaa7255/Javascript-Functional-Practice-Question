@@ -221,3 +221,84 @@ const customers = [
    ]
    const maleCustomers = getMaleCustomers(customers)
    //console.log(maleCustomers)
+
+    /* 
+   8.   Write an ES6 function that takes an array of objects containing
+    game information (title, developer, genre) and returns an array 
+    with all the games of a certain genre.  
+    const games = [
+ {
+ title: 'The Witcher 3: Wild Hunt',
+ developer: 'CD Projekt Red',
+ genre: 'RPG',
+ },
+ {
+ title: 'Grand Theft Auto V',
+ developer: 'Rockstar North',
+ genre: 'Action',
+ },
+ { title: 'Portal 2', developer: 'Valve Corporation', genre: 'Puzzle' },
+ {
+ title: 'The Legend of Zelda: Breath of the Wild',
+ developer: 'Nintendo',
+ genre: 'Adventure',
+ },
+]
+/ Your code here
+const filteredGames = filterByGenre(games, 'RPG')
+console.log(filteredGames)
+/ Output: [{title: "The Witcher 3: Wild Hunt", developer: "CD Projekt Red", genre: "RPG"
+*/
+const filterByGenre=(genree)=>{
+    return genree.filter(games=>games.genre==='RPG')
+}
+const games = [
+    {
+    title: 'The Witcher 3: Wild Hunt',
+    developer: 'CD Projekt Red',
+    genre: 'RPG',
+    },
+    {
+    title: 'Grand Theft Auto V',
+    developer: 'Rockstar North',
+    genre: 'Action',
+    },
+    { title: 'Portal 2', developer: 'Valve Corporation', genre: 'Puzzle' },
+    {
+    title: 'The Legend of Zelda: Breath of the Wild',
+    developer: 'Nintendo',
+    genre: 'Adventure',
+    },
+   ]
+   const filteredGames = filterByGenre(games, 'RPG')
+   //console.log(filteredGames)
+
+   /* 
+   9.   Write an ES6 function that takes an array of objects containing
+    car information (make, model,
+year) and returns an array with only the car model that were made after
+ the year 2012
+const cars = [
+ { make: 'Toyota', model: 'Corolla', year: 2010 },
+{ make: 'Honda', model: 'Civic', year: 2012 },
+ { make: 'Toyota', model: 'Camry', year: 2015 },
+ { make: 'Ford', model: 'Mustang', year: 2018 },
+]
+/ Your code here
+const carModels = getCarModel(cars)
+console.log(carModels)
+/ Output: ["Camry", "Mustang"]
+*/
+const getCarModel=(car)=>{
+    return car.filter(cardetails=>cardetails.year>2012).map(cardetails=>cardetails.make)
+}
+const cars2 = [
+    { make: 'Toyota', model: 'Corolla', year: 2010 },
+   { make: 'Honda', model: 'Civic', year: 2012 },
+    { make: 'Toyota', model: 'Camry', year: 2015 },
+    { make: 'Ford', model: 'Mustang', year: 2018 },
+   ]
+   const carModels = getCarModel(cars2)
+   console.log(carModels)
+
+   
