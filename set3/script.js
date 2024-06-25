@@ -194,4 +194,30 @@ const books = [
    const bookWithMoreThan500Pages = findBookWithMoreThan500Pages(books)
 //   console.log(bookWithMoreThan500Pages)
 
-   
+   /* 
+   7. Write an ES6 function that takes an array of objects containing 
+   customer information (name, age, gender) and returns an array with 
+   only the customers who are of gender Male.
+   const customers = [
+ { name: 'John', age: 25, gender: 'Male' },
+ { name: 'Jane', age: 30, gender: 'Female' },
+ { name: 'Bob', age: 40, gender: 'Male' },
+ { name: 'Alice', age: 35, gender: 'Female' },
+]
+/ Your code here
+const maleCustomers = getMaleCustomers(customers)
+console.log(maleCustomers)
+/ Output: [{ name: 'John', age: 25, gender: 'Male' }, 
+{ name: 'Bob', age: 40, gender: 'Male'}
+*/
+const getMaleCustomers=(genders)=>{
+    return genders.filter(customer=>customer.gender==='Male')
+}
+const customers = [
+    { name: 'John', age: 25, gender: 'Male' },
+    { name: 'Jane', age: 30, gender: 'Female' },
+    { name: 'Bob', age: 40, gender: 'Male' },
+    { name: 'Alice', age: 35, gender: 'Female' },
+   ]
+   const maleCustomers = getMaleCustomers(customers)
+   //console.log(maleCustomers)
