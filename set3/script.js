@@ -300,5 +300,4 @@ const cars2 = [
    ]
    const carModels = getCarModel(cars2)
    console.log(carModels)
-
    
