@@ -85,3 +85,61 @@ const products = [
    const electronicsProduct = findElectronicsProduct(products)
 //console.log(electronicsProduct)
 
+/*
+4.  Write an ES6 function that takes an array of objects representing 
+products with properties name, price and category. Return all the
+ products object that are in the category "electronics".
+const products = [
+ { name: 'Toothbrush', price: 29, category: 'health' },
+ { name: 'Coffee Maker', price: 99, category: 'home' },
+ { name: 'iPad', price: 799, category: 'electronics' },
+ { name: 'Smartwatch', price: 199, category: 'electronics' },
+]
+/ Your code here
+const electronicProducts = getAllElectronicProducts(products)
+console.log(electronicProducts)
+/ Output: [{ name: "iPad", price: 799, category: "electronics" }, 
+{ name: "Smartwatch",
+*/
+const getAllElectronicProducts=(categories)=>{
+    return categories.filter(categ=>categ.category==='electronics')
+}
+const products1 = [
+    { name: 'Toothbrush', price: 29, category: 'health' },
+    { name: 'Coffee Maker', price: 99, category: 'home' },
+    { name: 'iPad', price: 799, category: 'electronics' },
+    { name: 'Smartwatch', price: 199, category: 'electronics' },
+   ]
+   const electronicProducts = getAllElectronicProducts(products1)
+   //console.log(electronicProducts)
+
+   /*
+   5.  Write an ES6 function that takes an array of objects containing
+    student information (name, age, grade) and returns an array with 
+    only the students who have a grade above a certain value.
+const students = [
+ { name: 'Alice', age: 16, grade: 90 },
+ { name: 'Bob', age: 17, grade: 80 },
+ { name: 'Charlie', age: 15, grade: 95 },
+ { name: 'David', age: 16, grade: 85 },
+]
+/ Your code here
+const highGradeStudents = filterStudentsByGrade(students, 85)
+console.log(highGradeStudents)
+/ Output: [{ name: "Alice", age: 16, grade: 90 }, 
+{ name: "Charlie", age: 15, grade: 95 
+*/
+const filterStudentsByGrade=(highGrade)=>{
+    return highGrade.filter(student=>student.grade>85)
+}
+
+const students = [
+    { name: 'Alice', age: 16, grade: 90 },
+    { name: 'Bob', age: 17, grade: 80 },
+    { name: 'Charlie', age: 15, grade: 95 },
+    { name: 'David', age: 16, grade: 85 },
+   ]
+   const highGradeStudents = filterStudentsByGrade(students, 85)
+   //console.log(highGradeStudents)
+
+   
